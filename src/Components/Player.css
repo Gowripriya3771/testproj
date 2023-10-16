@@ -1,0 +1,14 @@
+.player{
+    /* position: absolute; */
+    /* z-index: 3; */
+    margin-top: 55px;
+    width: 900px;
+    height: 600px;
+    background-color: #000;
+    margin-right: auto;
+    margin-bottom: 0px;
+    margin-left:auto;
+    
+    border: 1px solid #009;
+       
+}

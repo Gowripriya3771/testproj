@@ -1,0 +1,80 @@
+body {
+    background-color: black;
+    color: white;
+}
+
+.row {
+    margin-left: 20px;
+    color: #fff;
+    position: relative;
+    top: 65px;
+    font-size: large;
+}
+
+.title {
+    margin-left: 20px;
+    right: 0%;
+    color: white;
+    font-size: large;
+    text-align: center;
+    height: fit-content;
+}
+
+h2 {
+    width: fit-content;
+    height: fit-content;
+}
+
+.rail{
+    display: flex;
+    overflow-x: scroll;
+}
+
+.rail::-webkit-scrollbar {
+    width: 0.1em; /* Width of the scrollbar track */
+}
+  
+.rail::-webkit-scrollbar-thumb {
+    background-color: transparent; /* Color of the thumb */
+}
+
+.posters {
+    padding: 20px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    justify-items: center;
+    grid-row-gap: 20px;
+    border-radius: 20px;
+}
+
+.inner {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.posters::-webkit-scrollbar {
+    display: none;
+}
+
+.poster {
+    max-height: 250px;
+    margin-right: 10px;
+    border-radius: 10px;
+}
+
+.poster img:hover {
+    transition: 0.3s;
+}
+
+.title2 {
+    background-color: rgb(14, 1, 4, 14);
+}
+
+.titleMovies {
+    width: fit-content;
+    height: fit-content;
+    text-align: center;
+    margin: auto;
+}
