@@ -4,7 +4,6 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import { MovieData } from "./MovieData";
 import "./Carousal.css";
 
-
 // Import Swiper styles
 import "swiper/css";
 import "swiper/css/pagination";
@@ -14,10 +13,9 @@ import "swiper/css/navigation";
 import { Autoplay, Pagination, Navigation } from "swiper/modules";
 import { useNavigate } from "react-router-dom";
 
-
 export default function Carousal() {
-  const navigate=useNavigate()
-  const navigate1=useNavigate()
+  const navigate = useNavigate();
+  const navigate1 = useNavigate();
   return (
     <>
       <Swiper
@@ -36,37 +34,57 @@ export default function Carousal() {
       >
         {MovieData.map((obj) => (
           <SwiperSlide>
-            
-            <div  className="carousal1">
-
+            <div className="carousal1">
               <div
                 style={{
                   backgroundImage: `url("${obj.Poster}")`,
                   transform: "scale(1.2)",
                   backgroundSize: "cover",
-                   backgroundPosition:"center" ,
-                  // backgroundColor: "rgba(255, 255, 255, 0.4)",
+                  backgroundPosition: "center",
+                  backgroundColor: "rgba(255, 255, 255, 0.4)",
                   filter: "blur(8px) brightness(0.62)",
                   width: "100%",
                   height: "100%",
                 }}
               ></div>
-              
+
               <div className="carousaldetail">
                 <div className="carousalimage">
-                  <img  onClick={() => navigate(`/details/${obj.id}`)} src={obj.Poster}></img>
+                  <img
+                    onClick={() => navigate(`/details/${obj.id}`)}
+                    src={obj.Poster}
+                  ></img>
                 </div>
-                <div style={{display:"flex",flexDirection:"column",gap:"20px",marginTop:"30px"}}className="carousaltitle">
-                  <h1>{obj.Title}</h1>
-                     <p style={{maxWidth:"400px"}}>{obj.Description}</p>
-                     <div>
-                     <button onClick={()=>navigate1("/player")} style={{color:"darkblue", backgroundColor:"white",border:"darkblue"}}>Watch Trailer</button>
-                     </div>
+                <div
+                  style={{
+                    display: "flex",
+                    flexDirection: "column",
+                    gap: "20px",
+                    marginTop: "30px",
+                  }}
+                  className="carousaltitle"
+                >
+                  <h1 style={{ color: "white" }}>{obj.Title}</h1>
+                  <p style={{ maxWidth: "400px" }}>{obj.Description}</p>
+                  <div>
+                    <button
+                      onClick={() => navigate1("/player")}
+                      style={{
+                        width: "130px",
+                        height: "40px",
+                        color: "white",
+                        backgroundColor: "darkblue",
+                        border: "none",
+                        borderRadius: "10px",
+                      }}
+                    >
+                      Watch Trailer
+                    </button>
+                    {/* <button className="red-btn" onClick={() => navigate("/player")}> */}
+                    {/* Watch Trailer */}
+                    {/* </button> */}
+                  </div>
                 </div>
-                
-                
-             
-                
               </div>
             </div>
           </SwiperSlide>

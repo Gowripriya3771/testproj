@@ -29,13 +29,15 @@ function NavBar({ searchTerm }) {
             placeholder="Search your movie here"
             onChange={(e) => searchTerm(e.target.value)}
           ></input>
-          <div style={{position:"relative"}}>
+          <div style={{ position: "relative" }}>
             <img
               className="avatar"
+             
               src="https://i.pinimg.com/originals/0d/dc/ca/0ddccae723d85a703b798a5e682c23c1.png"
               alt="Avatar"
               onClick={handleClick}
             />
+
             {/* <div><h1 onClick={handleClick} style={{right:"float",width:"100px",height:"30px",backgroundColor:"grey",color:"black",position:"absolute",borderColor:"black"}}>Logout</h1> */}
 
             {/* </div> */}

@@ -28,7 +28,7 @@ function Content({ movies, genres }) {
             groupedMovies[genre] &&
             groupedMovies[genre].length > 0 && (
               <div key={genre}>
-                <h2>{genre}</h2>
+                <h2 style={{color:"darkblue"}}>{genre}</h2>
                 <br/>
                 <div className="rail">
                   {groupedMovies[genre].map((movie) => (
@@ -45,7 +45,7 @@ function Content({ movies, genres }) {
                         src={movie.posterUrl}
                       />
                       <div className="titleMovies">
-                        <p className="title2">{movie.title}</p>
+                        <p style={{color:"white"}} className="title2">{movie.title}</p>
                       </div>
                     </div>
                   ))}

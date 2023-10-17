@@ -48,6 +48,7 @@ function App() {
         <h1 className="no-result">No results found....</h1>
       ) : (
         <Content movies={filterItem.length > 0 ? filterItem : movies} genres={genres} />
+       
       )}
     </div>
   );

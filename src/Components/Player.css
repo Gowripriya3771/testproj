@@ -1,14 +1,25 @@
-.player{
+/* .trailer{
+    height:100vh;
+    width:100%
+    
+} */
+
+/* .player{ */
     /* position: absolute; */
     /* z-index: 3; */
-    margin-top: 55px;
-    width: 900px;
-    height: 600px;
-    background-color: #000;
-    margin-right: auto;
-    margin-bottom: 0px;
-    margin-left:auto;
+    /* margin-top: 55px; */
+    /* width: 900px; */
+    /* height: 600px; */
+    /* width:100%;
+    height:fit-content; */
+   
+    /* margin-right: auto; */
+    /* margin-bottom: 0px; */
+    /* margin-left:auto; */
     
-    border: 1px solid #009;
+    /* border: 1px solid #009; */
        
-}
+/* } */
+/* .player1::-webkit-scrollbar {
+    display: none;
+} */

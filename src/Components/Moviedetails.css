@@ -1,4 +1,4 @@
-.main {
+/* .main {
     display: flex;
     align-items: center;
     justify-content: flex-start;
@@ -12,6 +12,7 @@
     padding: 20px;
     line-height: 2.5rem;
     background-color: #ffffff00;
+   
 }
 
 .bg-transparent {
@@ -21,11 +22,108 @@
 .title {
     text-align: center;
     margin-left: 30px;
+} */
+
+.container{
+    display: flex;
+    flex-direction: row;
+    background: linear-gradient(#4a2caf7c, #43006c1b 70%);
+    justify-content: space-between;
+    border: 3px solid white;
+    align-items: center;
+    margin: 20px auto;
+    height: 400px;
+    width: 900px; 
+    position: relative;
 }
 
+.blurimg{
+    height:400px;
+    width:950px;
+    align-items: center;
+    margin: 20px auto;
+    
+  
+    
+}
+.container img{
+    /* max-width: 200px; */
+    width:210px;
+    height: 290px;
+    border: 1px solid white ;
+    border-radius: 10px;
+    margin: 30px 20px;
+    /* width: 100%; */
+    /* padding-right: 40px; */
+    /* border-radius: 8px; */
+    
+    /* filter: drop-shadow(-0.6px -0.8px 80px #CFB872); */
+}
+.poster-details{
+    margin: 10px 30px;
+   
+    
+    
+    
+}
+.container::before{
+    content:'';
+    position: relative;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+    background:inherit;
+    filter:blur(8px);
+    z-index: -1;
+}
+
+
+
+.buttons{
+    display: flex;
+    margin-left: 10px;
+    text-align: center;
+    
+}
+.red-btn{
+    display: flex;
+    position: relative;
+    margin-top: 10px;
+    margin-left: 20px;
+    padding: 12px 20px;
+    color:black;
+    border: none;
+    outline: none;
+    background-color:white ;
+    border-radius: 10px;
+    gap: 3px;
+    font-size: 14px;
+    width: 130px;
+    height: 40px;
+}
+
+.poster-details p{
+    display: flex;
+    margin-bottom: 10px;
+    margin-left: 30px;
+    font-size: 16px;
+    color:#f9f9f9;
+    width: 400px;
+    text-align: start;
+}
+.poster-details h1{
+    width: 400px;
+    display: inline-block;
+    margin-bottom: 10px;
+    margin-left: 20px;
+    text-align: start;
+    color:white;
+}
 .contents h3 {
     display: inline;
     justify-content: space-between;
+    position: absolute;
 }
 
 .row-poster {
@@ -52,8 +150,8 @@
 }
 
 .poster-list img {
-    height: 250px;
-    width: 170px;
+    height: 300px;
+    width: 200px;
     border-radius: 10px;
 }
 
