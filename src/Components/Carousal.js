@@ -73,9 +73,11 @@ export default function Carousal() {
                         width: "130px",
                         height: "40px",
                         color: "white",
+                        // background: "linear-gradient(#4a2caf7c, #43006c1b 70%)",
                         backgroundColor: "darkblue",
                         border: "none",
                         borderRadius: "10px",
+                        zIndex:"1000"
                       }}
                     >
                       Watch Trailer

@@ -41,6 +41,8 @@ function LoginWithLocalStorage() {
               className="input1"
               type="email"
               placeholder="Email"
+              value="abc@gmail.com"
+
               // style={{color:"white",backgroundColor:"yellow"}}
               ref={email}
             />
@@ -52,6 +54,7 @@ function LoginWithLocalStorage() {
               placeholder="Password"
               // style={{color:"white",backgroundColor:"yellow"}}
               ref={password}
+              value="12345"
             />
           </div>
           <button className="button1" type="submit">
